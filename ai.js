@@ -21,7 +21,7 @@ const anthropic = new Anthropic({
     // for ANTHROPIC_API_KEY
     apiKey: apiKey,
     dangerouslyAllowBrowser: true,
-}); 
+});
 
 // Gets the current AI model
 // for await (const modelInfo of anthropic.models.list()) {
@@ -31,7 +31,7 @@ const anthropic = new Anthropic({
 export async function getRecipeFromChefClaude(ingredientsArr) {
     const ingredientsString = ingredientsArr.join(", ");
 
-    console.log(apiKey);
+    console.log(anthropic.apiKey + " test");
 
     const msg = await anthropic.messages.create({
         model: "claude-haiku-4-5-20251001",
