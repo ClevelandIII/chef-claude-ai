@@ -31,6 +31,8 @@ const anthropic = new Anthropic({
 export async function getRecipeFromChefClaude(ingredientsArr) {
     const ingredientsString = ingredientsArr.join(", ");
 
+    console.log(apiKey);
+
     const msg = await anthropic.messages.create({
         model: "claude-haiku-4-5-20251001",
         max_tokens: 1024,
