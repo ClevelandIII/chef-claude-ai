@@ -26,6 +26,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+      env: VITE_API_KEY: ${{ secrets.VITE_API_KEY }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -49,3 +50,7 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
+      - name: Use environment secret
+        run: echo "Testing"
+        env:
+          VITE_API_KEY: ${{ secrets.VITE_API_KEY }}
