@@ -53,4 +53,4 @@ jobs:
       - name: Use environment secret
         run: echo "Testing"
         env:
-          VITE_API_KEY: ${{ secrets.VITE_API_KEY }}
+          VITE_AI_KEY: ${{ secrets.VITE_AI_KEY }}
