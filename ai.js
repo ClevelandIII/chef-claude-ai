@@ -1,5 +1,5 @@
 import Anthropic from "@anthropic-ai/sdk";
-const apiKey = import.meta.env.VITE_AI_KEY;
+let apiKey = import.meta.env.VITE_AI_KEY;
 
 if(apiKey == null){
     apiKey = process.env.VITE_API_KEY;
