@@ -2,7 +2,7 @@ import Anthropic from "@anthropic-ai/sdk";
 let apiKey = import.meta.env.VITE_AI_KEY;
 
 if(apiKey == null){
-    apiKey = process.env.VITE_API_KEY;
+    apiKey = process.env.VITE_AI_KEY;
 }
 
 const SYSTEM_PROMPT = `
