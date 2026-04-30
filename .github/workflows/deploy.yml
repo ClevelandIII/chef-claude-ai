@@ -9,9 +9,6 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-env:
-  ENVIRONMENT: production  # Global environment variable
-  
 # Sets the GITHUB_TOKEN permissions to allow deployment to GitHub Pages
 permissions:
   contents: read
@@ -29,6 +26,7 @@ jobs:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+      env: VITE_API_KEY: ${{ secrets.VITE_API_KEY }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
