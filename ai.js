@@ -2,6 +2,8 @@ import Anthropic from "@anthropic-ai/sdk";
 let apiKey = import.meta.env.VITE_AI_KEY;
 
 if(apiKey == null){
+    console.log("key is null");
+    
     apiKey = process.env.VITE_AI_KEY;
 }
 
