@@ -40,6 +40,8 @@ jobs:
         run: npm ci
       - name: Build
         run: npm run build
+        env:
+          VITE_AI_KEY: ${{ secrets.VITE_AI_KEY }}
       - name: Setup Pages
         uses: actions/configure-pages@v6
       - name: Upload artifact
@@ -50,7 +52,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
-      - name: Use environment secret
-        run: echo "Testing"
-        env:
-          VITE_AI_KEY: ${{ secrets.VITE_AI_KEY }}
+
