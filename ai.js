@@ -2,7 +2,7 @@ import Anthropic from "@anthropic-ai/sdk";
 let apiKey = import.meta.env.VITE_AI_KEY;
 
 if(apiKey == null){
-    console.log("key is null");
+    //console.log("key is null");
     
     apiKey = process.env.VITE_AI_KEY;
 }
@@ -37,7 +37,7 @@ const anthropic = new Anthropic({
 export async function getRecipeFromChefClaude(ingredientsArr) {
     const ingredientsString = ingredientsArr.join(", ");
 
-    console.log(anthropic.apiKey + " test");
+    //console.log(anthropic.apiKey + " test");
 
     const msg = await anthropic.messages.create({
         model: "claude-haiku-4-5-20251001",
