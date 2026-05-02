@@ -16,7 +16,7 @@ import { createRoot } from "react-dom/client";
 export default function Claude(props) {
     return (
         <section className="suggested-recipe-container" aria-live="polite">
-            <div>
+            <div className="recipeProps">
                 <ReactMarkdown>{props.recipe}</ReactMarkdown>
             </div>
         </section>

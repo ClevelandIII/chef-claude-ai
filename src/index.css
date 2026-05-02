@@ -3,10 +3,15 @@
     font-family: Inter, sans-serif;
 }
 
+/* Free SVG Backgrounds and Patterns by SVGBackgrounds.com */
+
 body {
     margin: 0;
     font-family: Inter, sans-serif;
     background-color: #fafaf8;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Crect stroke='%23FAFAF8' stroke-width='0.4' width='1' height='1' id='s'/%3E%3Cpattern id='a' width='3' height='3' patternUnits='userSpaceOnUse' patternTransform='scale(25.4) translate(-960.63 -720.47)'%3E%3Cuse fill='%23f7f7f6' href='%23s' y='2'/%3E%3Cuse fill='%23f7f7f6' href='%23s' x='1' y='2'/%3E%3Cuse fill='%23f5f5f3' href='%23s' x='2' y='2'/%3E%3Cuse fill='%23f5f5f3' href='%23s'/%3E%3Cuse fill='%23f2f2f0' href='%23s' x='2'/%3E%3Cuse fill='%23f2f2f0' href='%23s' x='1' y='1'/%3E%3C/pattern%3E%3Cpattern id='b' width='7' height='11' patternUnits='userSpaceOnUse' patternTransform='scale(25.4) translate(-960.63 -720.47)'%3E%3Cg fill='%23f0f0ee'%3E%3Cuse href='%23s'/%3E%3Cuse href='%23s' y='5' /%3E%3Cuse href='%23s' x='1' y='10'/%3E%3Cuse href='%23s' x='2' y='1'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='8'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='5' y='2'/%3E%3Cuse href='%23s' x='5' y='6'/%3E%3Cuse href='%23s' x='6' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='h' width='5' height='13' patternUnits='userSpaceOnUse' patternTransform='scale(25.4) translate(-960.63 -720.47)'%3E%3Cg fill='%23f0f0ee'%3E%3Cuse href='%23s' y='5'/%3E%3Cuse href='%23s' y='8'/%3E%3Cuse href='%23s' x='1' y='1'/%3E%3Cuse href='%23s' x='1' y='9'/%3E%3Cuse href='%23s' x='1' y='12'/%3E%3Cuse href='%23s' x='2'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='2'/%3E%3Cuse href='%23s' x='3' y='6'/%3E%3Cuse href='%23s' x='3' y='11'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='4' y='10'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='c' width='17' height='13' patternUnits='userSpaceOnUse' patternTransform='scale(25.4) translate(-960.63 -720.47)'%3E%3Cg fill='%23ededeb'%3E%3Cuse href='%23s' y='11'/%3E%3Cuse href='%23s' x='2' y='9'/%3E%3Cuse href='%23s' x='5' y='12'/%3E%3Cuse href='%23s' x='9' y='4'/%3E%3Cuse href='%23s' x='12' y='1'/%3E%3Cuse href='%23s' x='16' y='6'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='d' width='19' height='17' patternUnits='userSpaceOnUse' patternTransform='scale(25.4) translate(-960.63 -720.47)'%3E%3Cg fill='%23FAFAF8'%3E%3Cuse href='%23s' y='9'/%3E%3Cuse href='%23s' x='16' y='5'/%3E%3Cuse href='%23s' x='14' y='2'/%3E%3Cuse href='%23s' x='11' y='11'/%3E%3Cuse href='%23s' x='6' y='14'/%3E%3C/g%3E%3Cg fill='%23ebebe9'%3E%3Cuse href='%23s' x='3' y='13'/%3E%3Cuse href='%23s' x='9' y='7'/%3E%3Cuse href='%23s' x='13' y='10'/%3E%3Cuse href='%23s' x='15' y='4'/%3E%3Cuse href='%23s' x='18' y='1'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='e' width='47' height='53' patternUnits='userSpaceOnUse' patternTransform='scale(25.4) translate(-960.63 -720.47)'%3E%3Cg fill='%23DB6300'%3E%3Cuse href='%23s' x='2' y='5'/%3E%3Cuse href='%23s' x='16' y='38'/%3E%3Cuse href='%23s' x='46' y='42'/%3E%3Cuse href='%23s' x='29' y='20'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='f' width='59' height='71' patternUnits='userSpaceOnUse' patternTransform='scale(25.4) translate(-960.63 -720.47)'%3E%3Cg fill='%23DB6300'%3E%3Cuse href='%23s' x='33' y='13'/%3E%3Cuse href='%23s' x='27' y='54'/%3E%3Cuse href='%23s' x='55' y='55'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='g' width='139' height='97' patternUnits='userSpaceOnUse' patternTransform='scale(25.4) translate(-960.63 -720.47)'%3E%3Cg fill='%23DB6300'%3E%3Cuse href='%23s' x='11' y='8'/%3E%3Cuse href='%23s' x='51' y='13'/%3E%3Cuse href='%23s' x='17' y='73'/%3E%3Cuse href='%23s' x='99' y='57'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23b)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23h)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23c)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23d)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23e)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23f)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23g)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 header {
@@ -22,6 +27,7 @@ nav {
     align-items: center;
     justify-content: center;
     gap: 1vw;
+    border-bottom: 2px solid #db6300;
 }
 
 h1 {
@@ -35,7 +41,19 @@ nav img {
 /**/
 
 main {
-    padding: 80px 30px 10px;
+    padding: 70px 30px 10px;
+}
+
+.descriptor {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.descriptor p {
+    margin-top: 0;
+    margin-bottom: 30px;
+    color: black;
 }
 
 form {
@@ -48,8 +66,7 @@ form {
 
 form button {
     border: none;
-    background-color: #141413;
-    color: #fafaf8;
+    background-color: black;
     color: white;
     border-radius: 10px;
     width: 150px;
@@ -83,16 +100,24 @@ form button::before {
     color: gray;
 }
 
+.form-results li::first-letter {
+    text-transform: uppercase;
+}
+
 .form-results ul {
     margin-bottom: 5vw;
+    line-height: 1.3;
 }
 
 .call-claude {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    background-color: rgb(234, 234, 234);
+    background-color: white;
     border-radius: 10px;
     padding: 1vw 2vw;
+    width: 50%;
+    margin: 0 auto;
+    border: 2px solid #db6300;
 }
 
 .call-claude h3 {
@@ -112,14 +137,36 @@ form button::before {
     background-color: rgb(219, 99, 0);
 }
 
+.ingredientList li::marker {
+    color: #db6300;
+}
+
 .suggested-recipe-container {
-    color: #475467;
-    line-height: 28px;
-    font-size: 1.125rem;
-    font-weight: 400;
+    color: black;
+    background-color: white;
+    border-bottom: 2px solid #db6300;
+    border-top: 2px solid #db6300;
+    margin-top: 4vw;
+    padding-bottom: 2vw;
+}
+
+.suggested-recipe-container h1 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 4vw;
 }
 
 .suggested-recipe-container ul li,
 .suggested-recipe-container ol li {
     margin-bottom: 8px;
 }
+
+.recipeProps {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 2vw;
+}
+
+/* .claudeIcon{
+    background-color: rgb(219, 99, 0);
+} */

@@ -3,12 +3,25 @@ import List from "./List";
 import Recipe from "./Recipe";
 import { getRecipeFromChefClaude } from "../ai";
 import Claude from "./Claude";
+import { useRef } from "react";
 
 export default function Main(props) {
     const [ingredientList, setIngredientList] = React.useState([]);
     const [recipe, setRecipe] = React.useState("");
 
     const list = ingredientList.map((prev) => <List item={prev} />);
+
+    const test = useRef(null);
+
+    // Scroll to section after it appears
+    React.useEffect(() => {
+        if (recipe != "") {
+            test.current.scrollIntoView({
+                behavior: "smooth", // smooth scrolling
+                block: "start", // align to top
+            });
+        }
+    }, [recipe]); // runs when showSection changes
 
     /**
      * Challenge: Get a recipe from the AI!
@@ -38,26 +51,42 @@ export default function Main(props) {
     }
 
     return (
-        <main>
-            <form action={add}>
-                <input
-                    type="text"
-                    placeholder="Enter ingredient"
-                    name="ingredient"
-                />
-                <button>Add ingredient</button>
-            </form>
+        <>
+            <main>
+                <div className="descriptor">
+                    <p>
+                        Welcome to Chef Claude! Enter four or more ingredients
+                        to get started!
+                    </p>
+                </div>
+                <form action={add}>
+                    <input
+                        type="text"
+                        placeholder="Enter ingredient"
+                        name="ingredient"
+                    />
+                    <button>Add ingredient</button>
+                </form>
 
-            {ingredientList.length > 0 && (
-                <section className="form-results">
-                    <h2>Ingredients on hand:</h2>
-                    <ul>{list}</ul>
-                </section>
+                {ingredientList.length > 0 && (
+                    <section className="form-results">
+                        <h2>Ingredients on hand:</h2>
+                        <ul className="ingredientList">{list}</ul>
+                    </section>
+                )}
+
+                {ingredientList.length >= 4 && <Recipe onClick={getRecipe} />}
+            </main>
+
+            {recipe != "" ? (
+                <>
+                    <div ref={test}>
+                        <Claude recipe={recipe} />
+                    </div>
+                </>
+            ) : (
+                <></>
             )}
-
-            {ingredientList.length >= 4 && <Recipe onClick={getRecipe} />}
-
-            <Claude recipe={recipe} />
-        </main>
+        </>
     );
 }
